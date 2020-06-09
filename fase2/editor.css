@@ -1,0 +1,94 @@
+/* -------------------- EDITOR E PREVIEW -------------------- */
+#preview{
+    position: absolute;
+    right: 435px;
+    top: 150px;
+    width: 450px;
+    height: 350px;
+    border: 1px solid black;
+    border-left: 0px;
+    z-index: 1;
+}
+.editor{
+    position: absolute;
+    left: 31px;
+    top: 150px;
+    width: 450px;
+    height: 350px;
+    border: 1px solid black;
+    overflow: auto;
+    font-size: 15;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+/* -------------------- COMPUTADOR -------------------- */
+.computador{
+    position: absolute;
+    top: 94px;
+    left: 1px;
+    z-index: 0;
+}
+
+/* -------------------- BOTOES HTML, CSS, JS E PLAYLIST YOUTUBE -------------------- */
+#htmlButton{
+    background: url('icones/html.png');
+    left: 32px;
+}
+#cssButton{
+    background: url('icones/css.png');
+    left: 57px;
+}
+#jsButton{
+    background: url('icones/js.png');
+    left: 82px;
+}
+#youtubeButton{
+    left: 535px;
+    padding: 12.5px 74px;
+    background: transparent;
+}
+
+/* -------------------- BOTOES GERAIS -------------------- */
+button{
+    position: absolute;
+    top: 125px;
+    opacity: 0.5;
+    border: none;
+    padding: 12.5px;
+    cursor: pointer;
+    z-index: 1;
+}
+button:hover{
+    opacity: 1;
+}
+button.active{
+    opacity: 1;
+}
+
+/* -------------------- MURAL DE POST-ITS -------------------- */
+.mural{
+    position: absolute;
+    top: 30px;
+    left: 970px;
+    z-index: 0;
+}
+#muralHTML{
+    background: url('icones/toDoJS.PNG');
+    padding: 50px;
+    top: 70px;
+    left: 1000px;
+    opacity: 1;
+}
+#textInput{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#desafioInput{
+    padding: 30px 100px;
+    top: 370px;
+    left: 1050px;
+    opacity: .3;  
+}

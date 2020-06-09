@@ -1,0 +1,25 @@
+/* NAO APAGUE AS FUNÇÕES verifica E next */    
+function verifica(sprite, objetivo){
+var botao;
+	if(sprite.-----(objetivo)){
+  		botao = createButton('Próxima Fase');
+		botao.mousePressed(next);
+  	}
+}
+
+function next(){
+	window.open('fase3/editor.html');
+}
+
+/* COMECE A PROGRAMAR APÓS ESSA LINHA */      
+
+var alvo;  
+
+function setup(){
+ 	createCanvas(350,350);
+ 	alvo = createSprite(330,330,30,30);
+}
+                 
+function draw(){
+ 	verifica(, alvo);            
+}    

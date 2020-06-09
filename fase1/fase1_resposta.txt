@@ -1,0 +1,24 @@
+/* NAO APAGUE AS FUNÇÕES verifica E next */
+function verifica(sprite){
+	var botao;
+ 	if(sprite.position.x == 50 && sprite.position.y == 80){
+  		botao = createButton('Próxima Fase');
+  		botao.mousePressed(next);
+  	}
+}
+function next(){
+	window.open('fase2/editor.html');
+}
+
+/* COMECE A PROGRAMAR APÓS ESSA LINHA */
+var sprite  
+function setup(){
+	createCanvas(300,300)
+ 	sprite = createSprite(50,80,30,30)
+}                       
+
+function draw(){
+ 	background(0)
+ 	drawSprites()
+ 	verifica(sprite);            
+}    

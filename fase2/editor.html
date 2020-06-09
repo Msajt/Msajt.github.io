@@ -1,0 +1,68 @@
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.8">
+       <link rel="stylesheet" type="text/css" href="editor.css" />
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <script src= "editor.js"></script>
+       <title>HTML EDITOR</title>
+   </head>
+   <body>
+
+    <!-- FRAME DO PREVIEW -->
+        <iframe id="preview"></iframe>
+    
+    <!-- BOTÕES PARA TROCAR ENTRE EDITORES -->
+        <button id="htmlButton" onclick="openEditor('htmleditor')"></button>
+        <button id="cssButton" onclick="openEditor('csseditor')"></button>
+        <button id="jsButton" onclick="openEditor('jseditor')"></button>
+        <a href="https://www.youtube.com/watch?v=UNujvMHc2PY&list=PL7jeQEDfIQ1Pzy0VzJlKnYG7qzWYX3Vq2" target="_blank">
+            <button id="youtubeButton"></button>
+        </a>
+        
+    <!-- JANELAS DE EDIÇÃO -->
+        <div class="editor" id="htmleditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+        <div class="editor" id="csseditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+        <div class="editor" id="jseditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+
+    <!-- BACKGROUND DE FUNDO -->
+        <img src="icones/fundo.PNG" class="computador">
+
+    <!-- BACKGROUND DO MURAL -->
+        <img src="icones/mural.PNG" class="mural">
+
+    <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
+        <button id="muralHTML" onclick="copyButton()"></button>
+        <input type="text"
+            value= "
+/* NAO APAGUE AS FUNÇOES verifica E next */    
+function verifica(sprite){
+var botao;
+	if(sprite.position.x > 400 && sprite.position.y > 400){
+  		botao = createButton('Próxima Fase');
+		botao.mousePressed(next);
+  	}
+}
+
+function next(){
+	window.open('fase3/editor.html');
+}
+
+/* COMECE A PROGRAMAR APÓS ESSA LINHA */      
+
+var sprite;  
+
+function setup(){
+ 	createCanvas(400,400);
+ 	sprite = createSprite(10,10,30,30);
+}
+                 
+function draw(){
+ 	verifica();            
+}
+"
+        id="textInput">
+       
+        <button type="text" value="Crie um sprite na posição 30x30 e leve para a posição além de 400x400 movimentando o sprite" id="desafioInput" onclick="alertButton()"></button>
+        
+   </body>
+</html>

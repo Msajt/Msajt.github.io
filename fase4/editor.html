@@ -1,0 +1,85 @@
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.8">
+       <link rel="stylesheet" type="text/css" href="editor.css" />
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <script src= "editor.js"></script>
+       <title>HTML EDITOR</title>
+   </head>
+   <body>
+
+    <!-- FRAME DO PREVIEW -->
+        <iframe id="preview"></iframe>
+    
+    <!-- BOTÕES PARA TROCAR ENTRE EDITORES -->
+        <button id="htmlButton" onclick="openEditor('htmleditor')"></button>
+        <button id="cssButton" onclick="openEditor('csseditor')"></button>
+        <button id="jsButton" onclick="openEditor('jseditor')"></button>
+        <a href="https://www.youtube.com/watch?v=UNujvMHc2PY&list=PL7jeQEDfIQ1Pzy0VzJlKnYG7qzWYX3Vq2" target="_blank">
+            <button id="youtubeButton"></button>
+        </a>
+        
+    <!-- JANELAS DE EDIÇÃO -->
+        <div class="editor" id="htmleditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+        <div class="editor" id="csseditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+        <div class="editor" id="jseditor" contenteditable="true" style="display:none" onkeyup="showPreview()"></div>
+
+    <!-- BACKGROUND DE FUNDO -->
+        <img src="icones/fundo.PNG" class="computador">
+
+    <!-- BACKGROUND DO MURAL -->
+        <img src="icones/mural.PNG" class="mural">
+
+    <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
+        <button id="muralHTML" onclick="copyButton()"></button>
+        <input type="text"
+            value= "
+/* NAO MODIFIQUE ESSA PARTE */
+var sprite, obstacle = [], box, objetivo;
+
+function iniciar(){
+    createCanvas(435,330);
+    obstacle[0] = createSprite(217, 10,435, 20);
+    obstacle[1] = createSprite(10, 165, 20, 330);
+    obstacle[2] = createSprite(217, 320, 435, 20);
+    obstacle[3] = createSprite(425, 165, 20, 330);
+    obstacle[4] = createSprite(75,10, 20, 330);
+    obstacle[5] = createSprite(145,250, 20, 330);
+  
+    sprite = createSprite(300, 200, 25, 25);
+
+    box = createSprite(200, 100, 25, 25);
+
+    objetivo = createSprite(40, 40, 25, 25)
+}
+
+function verifica(box, objetivo){
+var botao;
+	if(box.overlap(objetivo)) {
+		botao = createButton('Próxima Fase');
+		botao.mousePressed(next);
+          	objetivo.remove();
+          }
+}
+
+function next(){
+	window.open('fase5/editor.html');
+}
+
+/* COMECE POR AQUI */
+function setup(){
+ 	iniciar();
+}
+
+function draw(){
+      background(255);
+      drawSprites();
+      verifica(box, objetivo);
+}
+            "
+        id="textInput">
+       
+        <button type="text" value="Leve o sprite até o objetivo usando corretamente as colisões para as barreiras e para a caixa. Dica: use for para verificar as colisões dos obstaculos" id="desafioInput" onclick="alertButton()"></button>
+        
+   </body>
+</html>
