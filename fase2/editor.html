@@ -32,21 +32,7 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
-/* NAO APAGUE AS FUNÇOES verifica E next */    
-function verifica(sprite){
-var botao;
-	if(sprite.position.x > 400 && sprite.position.y > 400){
-  		botao = createButton('Próxima Fase');
-		botao.mousePressed(next);
-  	}
-}
-
-function next(){
-	window.open('https://msajt.github.io/fase3/editor.html');
-}
-
+        <input textarea="text" id="textInput">
 /* COMECE A PROGRAMAR APÓS ESSA LINHA */      
 
 var sprite;  
@@ -59,8 +45,29 @@ function setup(){
 function draw(){
  	verifica();            
 }
-"
-        id="textInput">
+
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+/* NAO APAGUE AS FUNÇOES verifica E next */    
+function verifica(sprite){
+var botao;
+	if(sprite.position.x > 400 && sprite.position.y > 400){
+  		botao = createButton('Próxima Fase');
+		botao.mousePressed(next);
+  	}
+}
+
+function next(){
+	window.open('https://msajt.github.io/fase3/editor.html');
+}	   
+	</textarea>
        
         <button type="text" value="Crie um sprite na posição 30x30 e leve para a posição além de 400x400 movimentando o sprite" id="desafioInput" onclick="alertButton()"></button>
         
