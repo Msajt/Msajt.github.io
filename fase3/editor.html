@@ -32,8 +32,30 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
+        <textarea type="text" id="textInput">
+/* COMECE A PROGRAMAR APÓS ESSA LINHA */      
+
+var alvo;  
+
+function setup(){
+ 	createCanvas(350,350);
+ 	alvo = createSprite(330,330,30,30);
+}
+                 
+function draw(){
+ 	verifica(, alvo);            
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 /* NAO APAGUE AS FUNÇÕES verifica E next */    
 function verifica(sprite, objetivo){
 var botao;
@@ -46,21 +68,7 @@ var botao;
 function next(){
 	window.open('https://msajt.github.io/fase4/editor.html');
 }
-
-/* COMECE A PROGRAMAR APÓS ESSA LINHA */      
-
-var alvo;  
-
-function setup(){
- 	createCanvas(350,350);
- 	alvo = createSprite(330,330,30,30);
-}
-                 
-function draw(){
- 	verifica(, alvo);            
-}    
-            "
-        id="textInput">
+	</textarea>
        
         <button type="text" value="Crie um sprite na posição 30x30 e o movimente para colidir com o objetivo" id="desafioInput" onclick="alertButton()"></button>
         
