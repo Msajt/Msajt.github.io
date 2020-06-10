@@ -37,7 +37,7 @@ function copyButton(){
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    alert("O seguinte código foi copiado: " + copyText.value);
+    alert("A tarefa foi anotada, passe para o editor");
 }
 
 function alertButton(){
