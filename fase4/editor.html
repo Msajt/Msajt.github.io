@@ -32,8 +32,29 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
+        <textarea type="text" id="textInput">
+/* COMECE POR AQUI */
+var sprite, obstacle = [], box, objetivo;
+		
+function setup(){
+ 	iniciar();
+}
+
+function draw(){
+      background(255);
+      drawSprites();
+      verifica(box, objetivo);
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
 /* NAO MODIFIQUE ESSA PARTE */
 var sprite, obstacle = [], box, objetivo;
 
@@ -65,19 +86,7 @@ var botao;
 function next(){
 	window.open('https://msajt.github.io/fase1/editor.html');
 }
-
-/* COMECE POR AQUI */
-function setup(){
- 	iniciar();
-}
-
-function draw(){
-      background(255);
-      drawSprites();
-      verifica(box, objetivo);
-}
-            "
-        id="textInput">
+	</textarea>
        
         <button type="text" value="Leve o sprite até o objetivo usando corretamente as colisões para as barreiras e para a caixa. Dica: use for para verificar as colisões dos obstaculos" id="desafioInput" onclick="alertButton()"></button>
         
