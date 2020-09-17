@@ -4,7 +4,7 @@
        <link rel="stylesheet" type="text/css" href="editor.css" />
        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
        <script src= "editor.js"></script>
-       <title>HTML EDITOR</title>
+       <title>4. Colisões II</title>
    </head>
    <body>
 
@@ -32,8 +32,29 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
+        <textarea type="text" id="textInput">
+/* COMECE POR AQUI */
+var sprite, obstacle = [], box, objetivo;
+		
+function setup(){
+ 	iniciar();
+}
+
+function draw(){
+      background(255);
+      drawSprites();
+      verifica(box, objetivo);
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
 /* NAO MODIFIQUE ESSA PARTE */
 var sprite, obstacle = [], box, objetivo;
 
@@ -63,21 +84,9 @@ var botao;
 }
 
 function next(){
-	window.open('fase5/editor.html');
+	window.open('https://msajt.github.io/fase1/editor.html', '_self');
 }
-
-/* COMECE POR AQUI */
-function setup(){
- 	iniciar();
-}
-
-function draw(){
-      background(255);
-      drawSprites();
-      verifica(box, objetivo);
-}
-            "
-        id="textInput">
+	</textarea>
        
         <button type="text" value="Leve o sprite até o objetivo usando corretamente as colisões para as barreiras e para a caixa. Dica: use for para verificar as colisões dos obstaculos" id="desafioInput" onclick="alertButton()"></button>
         

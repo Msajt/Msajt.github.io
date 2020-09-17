@@ -4,7 +4,7 @@
        <link rel="stylesheet" type="text/css" href="editor.css" />
        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
        <script src= "editor.js"></script>
-       <title>HTML EDITOR</title>
+       <title>1. Adicionando sprite</title>
    </head>
    <body>
 
@@ -32,31 +32,38 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
-            /* NAO APAGUE AS FUNÇÕES verifica E next */
-
-            function verifica(sprite){
-                var teste;
-                if(sprite.position.x == 50 && sprite.position.y == 80){
-                    teste = createButton('Próxima Fase');
-                    teste.mousePressed(next);  
-                }
-            }
-            function next(){
-                window.open('fase2/editor.html');
-           }
+        <textarea type="text" id="textInput">
+/* COMECE A PROGRAMAR APÓS ESSA LINHA */
                
-            /* COMECE A PROGRAMAR APÓS ESSA LINHA */
-               
-            function setup(){   
-            }
+function setup(){   
+}
             
-            function draw(){
-               verifica(spr);
-            }
-            "
-        id="textInput">
+function draw(){
+   verifica(spr);
+} 
+
+           
+           
+           
+           
+           
+           
+           
+           
+           
+/* NAO APAGUE AS FUNÇÕES verifica E next */
+
+function verifica(sprite){
+var botao;
+   if(sprite.position.x == 50 && sprite.position.y == 80){
+      botao = createButton('Próxima Fase');
+      botao.mousePressed(next);  
+   }
+}
+function next(){
+   window.open('https://msajt.github.io/fase2/editor.html', '_self');
+}          
+        </textarea>
        
         <button type="text" value="Crie um sprite e coloque na posição 50x80" id="desafioInput" onclick="alertButton()"></button>
         

@@ -4,7 +4,7 @@
        <link rel="stylesheet" type="text/css" href="editor.css" />
        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
        <script src= "editor.js"></script>
-       <title>HTML EDITOR</title>
+       <title>3. Colisões I</title>
    </head>
    <body>
 
@@ -32,21 +32,7 @@
 
     <!-- BOTAO MURAL E TEXTO PARA COPIAR -->
         <button id="muralHTML" onclick="copyButton()"></button>
-        <input type="text"
-            value= "
-/* NAO APAGUE AS FUNÇÕES verifica E next */    
-function verifica(sprite, objetivo){
-var botao;
-	if(sprite.-----(objetivo)){
-  		botao = createButton('Próxima Fase');
-		botao.mousePressed(next);
-  	}
-}
-
-function next(){
-	window.open('fase3/editor.html');
-}
-
+        <textarea type="text" id="textInput">
 /* COMECE A PROGRAMAR APÓS ESSA LINHA */      
 
 var alvo;  
@@ -58,9 +44,31 @@ function setup(){
                  
 function draw(){
  	verifica(, alvo);            
-}    
-            "
-        id="textInput">
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+/* NAO APAGUE AS FUNÇÕES verifica E next */    
+function verifica(sprite, objetivo){
+var botao;
+	if(sprite.-----(objetivo)){
+  		botao = createButton('Próxima Fase');
+		botao.mousePressed(next);
+  	}
+}
+
+function next(){
+	window.open('https://msajt.github.io/fase4/editor.html', '_self');
+}
+	</textarea>
        
         <button type="text" value="Crie um sprite na posição 30x30 e o movimente para colidir com o objetivo" id="desafioInput" onclick="alertButton()"></button>
         

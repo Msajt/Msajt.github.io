@@ -17,7 +17,7 @@
     height: 350px;
     border: 1px solid black;
     overflow: auto;
-    font-size: 15;
+    font-size: 12;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     z-index: 1;
@@ -71,7 +71,7 @@ button.active{
 .mural{
     position: absolute;
     top: 30px;
-    left: 970px;
+    left: 961px;
     z-index: 0;
 }
 #muralHTML{
