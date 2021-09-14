@@ -1,0 +1,142 @@
+/* !! ******************************* !! */
+/* !! *********** EXTERNO *********** !! */
+/* !! ******************************* !! */
+
+/* ** Setando uma fonte externa ** */
+@font-face{
+    font-family: ArcadeClassic;
+    src: url(fonts/ARCADECLASSIC.TTF);
+}
+
+body{
+    margin: 0 auto; /* top right bottom left */
+    font-family: ArcadeClassic;
+}
+
+.zone{
+    /* cursor: pointer; */ /* quando passo o mouse em cima o ponteiro do mouse muda */
+    color: white;
+    font-size: 1.5rem; /* tamanho da fonte dentro */
+    /* border-radius: 1px; */ /* raio da borda */
+    /* border: 1px solid grey; */
+    text-align: center;
+}
+
+/*
+.zone:hover{
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+*/
+
+.black{
+    background: black; 
+    background: -moz-linear-gradient(top, black 0%, grey 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, grey));
+    background: -webkit-linear-gradient(top, black 0%, grey 100%);
+    background: -o-linear-gradient(top, black 0%, grey 100%);
+    background: -ms-linear-gradient(top, black 0%, grey 100%);
+    background: linear-gradient(top, black 0%, grey 100%);
+}
+
+.blue{
+    background: darkblue; 
+    background: -moz-linear-gradient(top, darkblue 0%, cyan 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darkblue), color-stop(100%, cyan));
+    background: -webkit-linear-gradient(top, darkblue 0%, cyan 100%);
+    background: -o-linear-gradient(top, darkblue 0%, cyan 100%);
+    background: -ms-linear-gradient(top, darkblue 0%, cyan 100%);
+    background: linear-gradient(top, darkblue 0%, cyan 100%);
+}
+
+/* !! ******************************* !! */
+/* !! ************ NAVBAR *********** !! */
+/* !! ******************************* !! */
+
+.main-nav{
+    display: flex; /* Ligar o flexbox */
+    list-style: none;
+    align-items: center; /* Alinhar conteúdo */
+    justify-content: center; /* Alinhar conteúdo */
+    margin: 0;
+    font-size: 30px;
+}
+
+/* ** Dependendo do tamanho da página, irá mudar a fonte do 'navigator' ** */
+/*
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+*/
+
+li{
+    padding: 5px;
+}
+
+a{
+    color: white; /* cor da fonte */
+    cursor: pointer;
+    text-decoration: none; /* texto sem decoração */
+    transition: 0.3s;
+}
+
+a:hover{
+    font-size: 31px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* !! ******************************* !! */
+/* !! ************* COVER *********** !! */
+/* !! ******************************* !! */
+
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cover{
+    width: 25rem;
+}
+
+/* !! ******************************* !! */
+/* !! ********** GRID PANEL ********* !! */
+/* !! ******************************* !! */
+
+.grid-panel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+.box{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box > img{
+    width: 100%;
+    height: auto;
+}
+
+/* !! ******************************* !! */
+/* !! ************ FOOTER *********** !! */
+/* !! ******************************* !! */
+
+footer{
+    text-align: center;
+}
